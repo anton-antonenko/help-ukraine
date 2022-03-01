@@ -3,7 +3,7 @@
 set -e
 
 # The script is taken from https://github.com/canha/golang-tools-install-script
-VERSION="1.16.7"
+VERSION="1.18rc1"
 
 [ -z "$GOROOT" ] && GOROOT="$HOME/.go"
 [ -z "$GOPATH" ] && GOPATH="$HOME/go"

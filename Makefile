@@ -13,7 +13,6 @@ env:    ## Print useful environment variables to stdout
 
 build: init
 	mkdir -p ${BUILD_DIR}
-#	 $(GO) build -o ${BUILD_DIR}/help-ukraine
 	GOOS=darwin GOARCH=amd64 CGO_ENABLED=0 $(GO) build ${FLAGS} -o ${BUILD_DIR}/darwin-amd64/help-ukraine
 	GOOS=linux GOARCH=amd64 CGO_ENABLED=0 $(GO) build ${FLAGS} -o ${BUILD_DIR}/linux-amd64/help-ukraine
 docker-build: init fmt vet
