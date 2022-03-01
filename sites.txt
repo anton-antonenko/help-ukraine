@@ -1,0 +1,1 @@
+db24-ns1.srv.lukoil.com:53/UDP db24-ns2.srv.lukoil.com:53/UDP gltb-ns1.srv.lukoil.com:53/UDP gltb-ns2.srv.lukoil.com:53/UDP
