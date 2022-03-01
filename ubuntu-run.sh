@@ -1,7 +1,7 @@
 #!/bin/bash
 
 apt-get update
-apt-get -y install git docker-ce docker build-essential
+apt-get -y install git docker-ce docker docker.io build-essential
 
 git clone https://github.com/anton-antonenko/help-ukraine.git
 cd help-ukraine
