@@ -37,7 +37,7 @@ func GetJobs(c *gin.Context) {
 			log.Error("Failed opening sites file: ", err)
 			NewError(c, 500, fmt.Errorf("failed opening sites file: %w", err))
 		}
-		c.JSON(200, gin.H{"sites": data})
+		c.JSON(200, gin.H{"sites": string(data)})
 	} else {
 		c.JSON(404, gin.H{"sites": "none"})
 	}
